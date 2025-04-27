@@ -7,6 +7,15 @@ Data science project using MaxEnt supervised machine learning method to analyze 
 - Install required packages: `pip install -r requirements.txt`
 - Host jupyter notebook server: `jupyter notebook`
 
+### Data Processing
+- Download precipitation and average temperature data from [PRISM](https://prism.oregonstate.edu/recent/)
+  - Download whichever data suits your intended analysis
+- Convert `.bil` files to `.asc` via `bil_to_asc.sh` script
+  - example: `./bil_to_asc.sh PRISM_ppt PRISM_asc`
+- Depending on downloaded format if `.asc` files format doesn't match use `super_warp_asc.sh` to translate to same sizes
+  - MaxEnt should warn if `.asc` files are not identical which is required for the software to run
+  - `super_warp_asc.sh` script has hardcoded resizing values which may need to be altered depending on usecase
+
 ### Maxent Running
 - Download `maxent.jar` and install Java 17 via `sudo apt install openjdk-17-jdk`
 - Run with desired inputs: `java -mx<memory_setting> -jar maxent.jar samplesfile=maxent_data_full_train.csv environmentallayers=PRISM_asc outputdirectory=full_maxent_results`

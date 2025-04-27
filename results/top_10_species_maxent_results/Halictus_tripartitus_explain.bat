@@ -1,0 +1,1 @@
+java -mx16384m -cp "/home/goodlookin/Bee-Data-Science-Project/maxent.jar:maxent.jar" density.Explain -l /home/goodlookin/Bee-Data-Science-Project/results/top_10_species_maxent_results/Halictus_tripartitus.lambdas -c /home/goodlookin/Bee-Data-Science-Project/results/top_10_species_maxent_results/Halictus_tripartitus.asc /home/goodlookin/Bee-Data-Science-Project/PRISM_asc

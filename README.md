@@ -19,5 +19,6 @@ Data science project using MaxEnt supervised machine learning method to analyze 
 #### Citations
 Bee and Insect Dataset
 - Droege S, Maffei C (2025). Insect Species Occurrence Data from Multiple Projects Worldwide with Focus on Bees and Wasps in North America. Version 1.25. United States Geological Survey. Sampling event dataset https://doi.org/10.15468/6autvb accessed via GBIF.org on 2025-04-27.
+
 Environmental Precipitation and Average Temperature Layer Data
 - PRISM Group, Oregon State University, https://prism.oregonstate.edu, data created 4 Feb 2024, accessed 24 Apr 2024.
